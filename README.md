@@ -10,44 +10,39 @@
 adeptgraphics/
 ├── include/
 │   └── imgui/             # Dear ImGui source files
+│   └── glad/              # GLAD source files
+│   └── GLFW/              # GLFW source files
+│   └── KHR/               # KHR source files
 ├── lib/
 │   ├── libglfw3dll.a      # Static link library for GLFW
 │   └── glfw3.dll          # Runtime DLL for GLFW
 ├── src/
-│   └── main.cpp           # Your application entry point
-├── build.bat              # Builds the project using g++
-└── README.md              # This file
+│   └── main.cpp           # Application entry point
+├── build.bat              
+└── README.md              
 ```
 
 ---
 
 ## ⚙️ Prerequisites
 
-- **MSYS2** (using the UCRT64 shell)
-- `g++` (MinGW-w64)
-- `make` (optional, but useful for complex build scripts)
-- [`build.bat`](build.bat) configured correctly
+- `g++`
 
 ---
 
 ## 🛠️ How to Build
 
-1. Open the **MSYS2 UCRT64** terminal.
-
-2. Clone this repo:
+1. Clone this repo:
 
    ```bash
    git clone https://github.com/yourusername/adeptgraphics.git
    cd adeptgraphics
    ```
+2. Setup GLFW libs:
+    2.1. Copy `glfw3.dll` to `adeptgraphics/`
+    2.2. Copy `libglfw3dll.a` to `/lib`
 
-3. If `imgui` was added as a submodule, initialize it:
-
-   ```bash
-   git submodule update --init --recursive
-   ```
-
-4. Run the build script:
+2. Run the build script:
 
    ```bash
    ./build.bat
