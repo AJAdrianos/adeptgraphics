@@ -3,14 +3,15 @@
 :: Source Files
 set SOURCES=^
 src\main.cpp ^
-include\imgui\imgui.cpp ^
-include\imgui\imgui_draw.cpp ^
-include\imgui\imgui_tables.cpp ^
-include\imgui\imgui_widgets.cpp ^
-include\imgui\imgui_demo.cpp ^
-include\imgui\backends\imgui_impl_glfw.cpp ^
-include\imgui\backends\imgui_impl_opengl3.cpp ^
-include\glad\glad.c
+include\glad\glad.c ^
+src\Renderer\Shader.cpp
+:: include\imgui\imgui.cpp ^
+:: include\imgui\imgui_draw.cpp ^
+:: include\imgui\imgui_tables.cpp ^
+:: include\imgui\imgui_widgets.cpp ^
+:: include\imgui\imgui_demo.cpp ^
+:: include\imgui\backends\imgui_impl_glfw.cpp ^
+:: include\imgui\backends\imgui_impl_opengl3.cpp 
 
 :: Includes
 set INCLUDES=-Iinclude\imgui -Iinclude\imgui\backends -Iinclude
